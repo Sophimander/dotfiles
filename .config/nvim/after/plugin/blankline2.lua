@@ -1,6 +1,8 @@
-vim.opt.list = true
-vim.opt.listchars:append "eol:↴"
+--vim.opt.listchars = { eol = "$", space=" ", tab = "  " }
+--vim.opt.list = true
 
 require("ibl").setup {
-    --show_current_context_start = true,
+    scope = {
+        show_start = false,
+    }
 }

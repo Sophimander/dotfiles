@@ -111,14 +111,12 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval `ssh-agent -s` >/dev/null
-ssh-add
-
 alias vactivate='source venv/bin/activate'
-alias vim='~/nvim-linux64/bin/nvim'
+alias vim='~/nvim.appimage'
 alias changer='source ~/scripts/project-changer'
 alias nconfig='source ~/scripts/project-changer nvim'
 alias tmux-sessionizer='~/scripts/tmux-sessionizer'
+alias clip='clip.exe'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

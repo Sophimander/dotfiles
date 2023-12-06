@@ -21,7 +21,7 @@ dap.configurations.go = {
     request = 'launch';
     showLog = false;
     program = "${file}";
-    dlvToolPath = vim.fn.exepath('~/go/bin/dlv')  -- Adjust to where delve is installed
+    dlvToolPath = vim.fn.exepath(os.getenv('HOME') .. '/go/bin/dlv')  -- Adjust to where delve is installed
   },
 }
 dap.adapters.python = function(cb, config)
