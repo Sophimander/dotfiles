@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
     use "rebelot/kanagawa.nvim"
 
     use {
-        'ThePrimeagen/harpoon',
+        'ThePrimeagen/harpoon', branch = 'harpoon2',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
@@ -103,5 +103,7 @@ use {
     }
   end
 }
+
+use("github/copilot.vim")
 
 end)

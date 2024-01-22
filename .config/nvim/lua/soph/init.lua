@@ -1,3 +1,4 @@
 require("soph.remap")
 require("soph.set")
-require("soph.packer")
+require("soph.lazy")
+--require("soph.packer")

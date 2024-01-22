@@ -16,3 +16,7 @@ vim.keymap.set("n", "<leader>em", ":edit $MYVIMRC<CR>")
 
 -- Send visual selection to windows clipboard
 vim.keymap.set("x", "<leader>ys", ":w !CLIP.exe")
+
+--I hate using :
+vim.keymap.set("n", "<leader>ww", ":w<CR>", {desc = 'Faster Saving'})
+vim.keymap.set("n", "<leader>wq", ":wq<CR>", {desc = 'Faster Saving and Quiting'})
