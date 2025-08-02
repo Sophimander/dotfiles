@@ -2,7 +2,7 @@ return {
     'goolord/alpha-nvim',
     requires = { 'nvim-tree/nvim-web-devicons' },
     config = function ()
-        local alpha = require'alpha'
+        local alpha = require('alpha')
         local config = {}
 
         local keybind_options = { silent = true, noremap=true }
