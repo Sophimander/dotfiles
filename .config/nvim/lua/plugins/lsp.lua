@@ -1,4 +1,22 @@
 return {
+    "mason-org/mason-lspconfig.nvim",
+    opts = {
+        ensure_installed = { "lua_ls", "pyright", "gopls" },
+    },
+    dependencies = {
+        { "mason-org/mason.nvim", opts = {} },
+        "neovim/nvim-lspconfig",
+        {
+            "folke/lazydev.nvim",
+            ft = "lua",
+            opts = {
+                library = {
+                    { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+                }
+            },
+        },
+    },
+}
 --    'VonHeikemen/lsp-zero.nvim',
 --    branch = 'v3.x',
 --    lazy = true,
@@ -52,10 +70,7 @@ return {
 --        lsp.setup()
 --    end
 --
-},
-{
 --    'neovim/nvim-lspconfig',
 --    dependencies = {
 --        'hrsh7th/cmp-nvim-lsp'
 --    }
-}

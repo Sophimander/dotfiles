@@ -43,7 +43,10 @@ return {
         },
     },
     {
-        "folke/which-key.nvim", opts = {}
+        "folke/which-key.nvim", opts = {},
+        dependencies = {
+            { 'echasnovski/mini.icons', version = '*' },
+        }
     },
     {
         'nvim-lualine/lualine.nvim',
